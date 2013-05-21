@@ -1,0 +1,410 @@
+/*
+* Skeleton V1.2
+* Copyright 2011, Dave Gamache
+* www.getskeleton.com
+* Free to use under the MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+* 6/20/2012
+*/
+
+/* Table of Content
+==================================================
+	#Site Styles
+	#Page Styles
+	#Media Queries
+	#Font-Face */
+
+/* #Site Styles
+================================================== 
+
+Colors:
+
+Primary colors: 
+	1.Text 
+	2.Background
+-----------------------
+
+*/
+	.pink{
+		color:#efc6b4;
+		color:rgba(240,198,181,1);
+		}
+	.pinkBg{
+		background-color:#efc6b4;
+		background-color:rgba(240,198,181,1);
+		}	
+	.litePink
+		{
+		color:#fcf3ef;
+		color:rgba(252,243,239,1)
+		}
+	.litePinkBg
+		{
+		background-color:#fcf3ef;
+		background-color:rgba(252,243,239,1)
+		}
+	
+	.blue{
+		color:#193148;
+		color:rgba(25,50,73,1);
+		}
+	.blueBg{
+		background-color:#193148;
+		background-color:rgba(25,50,73,1);
+		}
+		
+	.liteGrey{
+		color:#e6e7e8;
+		color:rgba(230,231,232,1);
+		}	
+	.liteGreyBg{
+		background-color:#e6e7e8;
+		background-color:rgba(230,231,232,1);
+		}
+	
+	.altGreyBg{ background-color:#f5f6f7;}
+	
+	.darkGrey{
+		color:#58585B;
+		color:rgba(88,89,91,1);
+		}
+	.darkGreyBg{
+		background-color:#58585B
+		background-color:rgba(88,89,91,1)
+		}	
+	
+	.white{
+		color:#ffffff;
+	}
+	.whiteBg{
+		background-color:#ffffff;
+	}
+	
+	.black { color:#040707; }
+	.blackBg { 
+		background-color:#040707; 
+		background-color:#rgba(10,10,10,1); 
+		}
+	.blackBgTwo { background-color:#231F20; }
+	
+	.green{
+		color:#ABBA9E;
+		color:rgba(172,187,159,1);
+	}
+/*		
+Secondary Colors:
+-----------------------	
+	Link - Hover
+	#EADFD1
+	rgba(235,224,209,1)
+	
+	Link - Active
+	#D3AFA4
+	rgba(211,175,165,1)
+	
+	Orange - form focus color
+	#f1B97B
+	rgba(241,186,123,1)
+	
+	Green - valid form field
+	#ABBA9E
+	rgba(172,187,159,1)
+	
+	Red - invalid form field
+	#BC5050
+	rgba(189,80,81,1)
+
+*/	
+
+
+.text-shadow { text-shadow: 0px 0px 10px #000; }
+
+/* #Page Styles
+================================================== */
+/* Text Area Styles */
+	
+	.overlay{ z-index:100000; background-color:#000; width:100%; height:100%; position:fixed; top:0; left:0;}
+	
+	
+/* HEADER */	
+	.headerWrapper 
+			{  background-color:#fff; position:fixed; top:0; z-index:100000; width:100%; }
+	
+	
+/* HEADER Navigation */
+	.navWrapperSub, .navWrapperContact { padding:10px 0 60px; }	
+	.navWrapper { padding:10px 0 90px; } /* ## Padding will need to animate to padding:10px 0 50px; ## */
+
+	.navigation { position:relative; }
+	
+	.subNavLinks,
+	.navLinks { position:absolute; top:-17px; left: 170px; z-index:0; margin:0; padding-top:30px; }
+		
+	.navigation ul.subNavLinks li,
+	.navigation ul.navLinks li { display:inline; float:left; padding-right:30px; }
+
+	.navigation ul.subNavLinks li,
+	.navigation ul.navLinks li { text-decoration:none; }
+	
+/* 5/1 NEW NAV */
+	
+	.logoBlock { position:absolute; }
+	.logoBlock img { width:120px; }
+
+	.subMenuForNav,
+	.menuForNav { position:absolute; left:110px; top:10px; z-index:0; opacity:0; font-size:14px; cursor:pointer; }
+	
+
+	
+		
+
+
+
+/* HEADER Index masthead */
+	
+	.introduction { margin:130px 0 0 0; } 
+	/* BAD HACK. switching h1 info with h2 in order to not break SEO rules */
+	.introduction h1 { font-size: 2em; line-height: 1.5em; font-family: "minion-pro","Georgia", san-serif; }
+	
+	
+	.introText { float:left; padding:80px 0 115px;}
+	
+	
+	
+	
+
+/* MAIN */
+
+	.main { ; }
+
+/* MAIN Index Project Grid */
+	
+	.werk { padding-top:120px; }
+	 ul.werk li.project  { margin-top:6px; margin-bottom:6px;  }
+	.project { position:relative; }
+	
+	.project img { -moz-border-radius: 2px; border-radius:2px; }	
+	.project a div { 
+				background: #efc6b4 none repeat scroll 0 0;
+				background: rgba(240,198,181,1) none repeat scroll 0 0;
+				text-align:center; 
+				position:absolute; 
+				bottom:0; 
+				top:0; 
+				left:0; 
+				right:0; 
+				opacity:0; 
+				padding:0 10px;
+				transition: 0.4s ease;
+				color:#fff;
+				color:rgba(250,250,250);
+				letter-spacing:0.1em;
+				border:1px solid #fcf3ef;
+				}
+				
+	.project a div:hover { opacity:0.9; }
+	.project a div h4 { margin-top:38.333333%;/* margin-top:115px; */ letter-spacing:.2em;}
+
+/* MAIN Project masthead */
+	
+	.project .logo { padding:10px 0 0 0; float:right;}
+	
+/* MAIN Project Sections */
+		
+	.main { ; }
+	.about,
+	.projDesc, 
+	.imgCluster,
+	.testimonial,
+	.contact
+	 { padding:60px 0; } 
+	
+
+/* MAIN Project Descrption */
+
+	.projDesc p,
+	.testimonial p { line-height:1.875em; }
+	
+
+/* MAIN Project Hero Image */
+	
+	.hero { position:relative; width:100%; height:auto; margin-top:70px;}
+	.heroHeader { position:absolute; top:45%; bottom:auto; right:0; left:0; text-align:center; z-index:1; letter-spacing:3px; }
+
+	
+/* MAIN Project Image Cluser */
+
+/* MAIN Project work Grid */
+
+	.workGrid { padding-bottom:50px; }
+
+/* MAIN summary */
+	.contactInfo {text-align:center; padding-top:10px;}
+	.summary { text-align:center; padding:100px 0 70px; }
+	
+	
+
+/* Contact && About */
+
+	/* MAIN Contact Business Information */ 
+	
+	#map-canvas { position:relative; height: 100%; display:block; margin-top:70px; max-height:2000px; height:400px; }
+	.mapText { position:absolute; top:30%; bottom:auto; right:0; left:0; text-align:center; z-index:1; letter-spacing:3px; }
+	
+	.contact .businessInfo p,
+	.about .businessInfo p { color:#193148; }
+	
+	.businessInfo ul li { padding:3px 0; font-size:0.875em; }
+	
+	.about ul a
+	.contact ul a { color:#193148; }
+	
+	/* CONTACT FORM STYLING */
+	
+	.contactForm div { margin-bottom:20px; }
+	.error { 
+		padding-top:10px;
+		font-family: "nevis-bold", helvetica, arial, san-serif; 
+		font-size:70%; 
+		letter-spacing:1px; 
+		color:#BC5050;
+		color:rgba(189,80,81,1);
+		visibility:hidden;
+		}
+	
+/* FOOTER */
+
+	/* .footer { text-align:center; padding:120px 0 60px; margin:0 auto;} */
+	.footer { padding:80px 0 20px; margin:0 auto; background-color:#231F20; font-size:70%; }
+	.footerLogo { max-width:80px; }
+	.footer h5 a {  font-size:inherit; }
+	.footer .footerText { color:#efc6b4;  padding:7px 0 0;}
+	.footer a { display:inline-block; color:#efc6b4;}
+	.footer .email,
+	.footer .phone { }
+
+
+	.deskTab { display:block; }
+	.phone { display:none; }
+	.mobile {display:none;}
+	.standard{display:block;}
+
+/* #Media Queries
+================================================== */
+	
+	/* Smaller than standard 960 (devices and browsers) */
+	@media only screen and (min-width:960px){
+		.mobile{display:none;}
+		.standard{display:block;}
+	}
+	
+	@media only screen and (max-width: 959px) {
+		.mobile{display:none;}
+		.standard{display:block;}
+	}
+
+	/* Tablet Portrait size to standard 960 (devices and browsers) */
+	@media only screen and (min-width: 768px) and (max-width: 959px) {
+		.mobile{display:none;}
+		.standard{display:block;}
+		`
+	}
+
+	/* All Mobile Sizes (devices and browser) */
+	@media only screen and (max-width: 767px) {
+		.mobile{display:block;}
+		.standard{display:none;}
+
+	}
+
+	/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+	@media only screen and (min-width: 480px) and (max-width: 767px) {
+		.mobile{display:block;}
+		.standard{display:none;}
+		
+		/* Hero Header */
+		.heroHeader { top:40%; }
+		h1 { font-size:30px; line-height:1em;}
+	}
+
+	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+	@media only screen and (max-width: 479px) {
+		
+		.deskTab { display:none; }
+		.phone { display:block; }
+		.mobile{display:block;}
+		.standard{display:none;}
+		
+		
+		h1, h2 { font-size:1.5em; line-height:1.5em; }
+		h4 { font-size:1em; }
+		.introduction h1 { font-size:1em; }
+		
+		/* Nav */
+			.logoBlock img { width:100px; }
+			ul.navLinks { left:130px; display:inline; }
+			.navigation ul.navLinks li { padding-right:30px; }
+		/* Hero Header */
+		.heroHeader { top:30%; }		
+		
+		
+		/* Project info */
+		/* Padding between hero and project text */
+		.about, .projDesc, .imgCluster,
+		.testimonial, .contact{ padding:30px 0 60px;  }
+		
+		.introText { padding:20px 0 55px; }
+		
+		/* Project Grid - SHOW PROJ NAME on phone*/
+		.project a div { 
+
+				background:none;
+				text-align:center; 
+				position:relative;
+				bottom:0; 
+				top:10px; 
+				left:0; 
+				right:0; 
+				margin-bottom:40px;
+				padding:0 10px;
+				color:#fff;
+				color:rgba(250,250,250);
+				letter-spacing:0.1em;
+				border:none;
+				border-bottom:1px solid #666666;
+				opacity:1;
+				}
+
+		.project a div h4 { margin-top:0px;/* margin-top:115px; */ color:white; letter-spacing:.2em;}
+		
+		.project hr { display:none; }			
+		
+		/* Project Summary */
+		
+ 		.summary .phone {margin-top:20px;}
+
+		.footerText, .footerLogo { }
+
+	}
+
+
+/* #Font-Face
+================================================== */
+
+/*
+
+Main text is Minion Pro, found here: https://typekit.com/fonts/minion-pro.
+
+*/
+/* NEVIS BOLD - Used for headlines. */
+	@font-face {
+    font-family: 'nevis-bold';
+    src: url('../font/nevis-webfont.eot');
+    src: url('../font/nevis-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/nevis-webfont.woff') format('woff'),
+         url('../font/nevis-webfont.ttf') format('truetype'),
+         url('../font/nevis-webfont.svg#webfontbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
